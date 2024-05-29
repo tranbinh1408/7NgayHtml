@@ -59,5 +59,6 @@
 - Màu nền: `background-color`
 - Màu văn bản: `color`
 - Phông chữ: `font-family`
-- Cỡ chữ: `font-size`
+- Cỡ chữ: `font-size` 
 - Căn chỉnh văn bản: `text-align`
+ 

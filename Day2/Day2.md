@@ -92,4 +92,61 @@ Vd: '''
 Vd: '''
         <bdo dir="rtl">This line will be written from right to left</bdo>
     '''
-    
+## 7. Thẻ nhận xét HTML
+- Với nhận xét, bạn có thể đặt thông báo và lời nhắc trong mã HTML của mình
+Vd: '''
+        <!-- This is a comment -->
+        <p>This is a paragraph.</p>
+        <!-- Remember to add more information here -->
+    '''
+- Bình luận có thể được sử dụng để ẩn nội dung.
+Vd1: '''
+        <p>This is a paragraph.</p>
+        <!-- <p>This is another paragraph </p> -->
+        <p>This is a paragraph too.</p>
+    '''
+Vd2:
+    '''
+        <p>This <!-- great text --> is a paragraph.</p>
+    '''
+# III. CSS
+## 1. Đường viền CSS
+- Thuộc tính CSS borderxác định đường viền xung quanh phần tử HTML.
+## 2. Phần đệm CSS
+- Thuộc tính CSS paddingxác định khoảng đệm (khoảng trắng) giữa văn bản và đường viền.
+## 3. Ký quỹ CSS
+- Thuộc tính CSS marginxác định lề (khoảng trắng) bên ngoài đường viền.
+## 4. Liên kết tới CSS bên ngoài
+- Ví dụ này sử dụng một URL đầy đủ để liên kết đến một biểu định kiểu:
+    '''
+        <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+    '''
+- Ví dụ này liên kết đến một biểu định kiểu nằm trong thư mục html trên trang web hiện tại: 
+    '''
+        <link rel="stylesheet" href="/html/styles.css">
+    '''
+- Ví dụ này liên kết đến một biểu định kiểu nằm trong cùng thư mục với trang hiện tại:
+    '''
+        <link rel="stylesheet" href="styles.css">
+    '''
+# IV. Liên kết HTML
+## 1. Liên kết HTML - Thuộc tính đích
+- Thuộc targettính có thể có một trong các giá trị sau:
+
+    - _self- Mặc định. Mở tài liệu trong cùng cửa sổ/tab khi tài liệu được nhấp vào
+    - _blank- Mở tài liệu trong cửa sổ hoặc tab mới
+    - _parent- Mở tài liệu trong khung cha
+    - _top- Mở tài liệu ở chế độ toàn màn hình
+Vd: '''
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+    '''
+## 2. URL tuyệt đối so với URL tương đối
+-  URL tuyệt đối (địa chỉ web đầy đủ) trong hrefthuộc tính
+- Liên kết cục bộ (liên kết đến một trang trong cùng một trang web) được chỉ định bằng URL tương đối (không có phần "https://www")
+## 3. Liên kết đến một địa chỉ email
+- Sử dụng mailto:bên trong hrefthuộc tính để tạo liên kết mở chương trình email của người dùng (để cho phép họ gửi email mới)
+Vd: '''
+        <a href="mailto:someone@example.com">Send email</a>
+    '''
+## 4. Nút dưới dạng liên kết
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
