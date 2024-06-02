@@ -149,4 +149,29 @@ Vd: '''
         <a href="mailto:someone@example.com">Send email</a>
     '''
 ## 4. Nút dưới dạng liên kết
-<button onclick="document.location='default.asp'">HTML Tutorial</button>
+Vd: '''
+        <button onclick="document.location='default.asp'">HTML Tutorial</button>
+    '''
+## 5. Tiêu đề liên kết
+- Thuộc title tính chỉ định thông tin bổ sung về một phần tử. Thông tin thường được hiển thị dưới dạng văn bản chú giải công cụ khi chuột di chuyển qua phần tử.
+Vd: '''
+        <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+    '''
+## 6. Liên kết và tạo dấu trang
+- Đầu tiên, sử dụng idthuộc tính để tạo dấu trang
+- Sau đó, thêm liên kết vào dấu trang ("Chuyển tới Chương 4"), từ trong cùng một trang: '''<a href="#C4">Jump to Chapter 4</a>'''
+# V. Hình ảnh
+## 1. Hình ảnh nối
+- Sử dụng thuộc tính CSS float
+Vd: '''
+        style="float:right;width:42px;height:42px;">
+    '''
+## 2. Nền
+- Nếu bạn muốn hình nền bao phủ toàn bộ phần tử, bạn có thể đặt thuộc background-sizetính thành cover.
+- Ngoài ra, để đảm bảo toàn bộ phần tử luôn được che phủ, hãy đặt background-attachmentthuộc tính thànhfixed.
+- Để tránh hình nền lặp lại, hãy đặt background-repeatthuộc tính thành no-repeat.
+- Nếu bạn muốn hình nền co giãn để vừa với toàn bộ phần tử, bạn có thể đặt thuộc background-sizetính thành 100% 100%.
+## 3. Phần tử <picture> HTML
+- Phần tử HTML <picture> giúp các nhà phát triển web linh hoạt hơn trong việc chỉ định tài nguyên hình ảnh.
+- Phần <picture> tử chứa một hoặc nhiều <source> phần tử, mỗi phần tử đề cập đến các hình ảnh khác nhau thông qua srcset thuộc tính. Bằng cách này, trình duyệt có thể chọn hình ảnh phù hợp nhất với chế độ xem và/hoặc thiết bị hiện tại.
+- Mỗi <source>phần tử có một mediathuộc tính xác định thời điểm hình ảnh phù hợp nhất.
