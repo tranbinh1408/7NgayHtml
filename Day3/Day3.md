@@ -360,7 +360,7 @@ Vd: <style>
 IV.	HTML Responsive
 -	Cài đặt khung nhìn: Để tạo một trang web phản hồi, hãy thêm thẻ sau <meta> vào tất cả các trang web của bạn
 Vd: <meta name="viewport" content="width=device-width, initial-scale=1.0">
--	Hiển thị hình ảnh khác nhau tùy thuộc vào chiều rộng trình duyệt: Phần tử HTML <picture>cho phép bạn xác định các hình ảnh khác nhau cho các kích thước cửa sổ trình duyệt khác nhau
+-	Hiển thị hình ảnh khác nhau tùy thuộc vào chiều rộng trình duyệt: Cho phép bạn xác định các hình ảnh khác nhau cho các kích thước cửa sổ trình duyệt khác nhau
 Vd: <picture>
   <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
   <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
