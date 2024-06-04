@@ -435,7 +435,7 @@ Vd1: <form action="/action_page.php" method="get">
 Vd2: <form action="/action_page.php" method="post">
 -	Thuộc tính hoàn thành <autocomplete>: Khi bật tính năng tự động hoàn thành, trình duyệt sẽ tự động hoàn thành các giá trị dựa trên các giá trị mà người dùng đã nhập trước đó
 Vd: <form action="/action_page.php" autocomplete="on">
--	Thuộc tính novalidate: Khi xuất hiện, nó chỉ định rằng dữ liệu biểu mẫu (đầu vào) sẽ không được xác thực khi gử
+-	Thuộc tính <novalidate> : Khi xuất hiện, nó chỉ định rằng dữ liệu biểu mẫu (đầu vào) sẽ không được xác thực khi gửi
 Vd: <form action="/action_page.php" novalidate>
 -	Phàn tử <input>: 
 Vd: <label for="fname">First name:</label>

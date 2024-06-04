@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: rgb(127, 255, 238);
+        }
+        tr:nth-child(even){
+            background-color: rgb(182, 197, 211);
+
+        }
+        .bencanh{
+            width: 50%;
+            display:inline-table
+        }
+        .contener{
+            display:flex
+        }
+        input[type=text], input[type=number], input[type=date], input[type=email], input[type=tel], select{
+            width:99%;
+            padding:6px;
+            margin: 6px
+        }
+        form{
+            width: 100%;
+            background-color: rgb(232, 235, 238);
+            padding:10px;
+
+        }
+        input[type=submit]{
+            background-color:forestgreen;
+            color:aliceblue;
+            padding: 10px
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Coffee Haven</h1>
+    <div class="contener">
+        <div class="bencanh">
+            <p><b>Price List</b></p>
+            <table>
+                <tr>
+                    <th rowspan="2">Coffee Type</th>
+                    <th colspan="3">Size & Price</th>
+                </tr>
+                <tr>
+                    <th>Small</th>
+                    <th>Medium</th>
+                    <th>Large</th>
+                </tr>
+                <tr>
+                    <td>Espresso</td>
+                    <td>$2</td>
+                    <td>$3</td>
+                    <td>$4</td>
+                </tr>
+                <tr>
+                    <td>Latte</td>
+                    <td>$3</td>
+                    <td>$4</td>
+                    <td>$5</td>
+        
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td>$3</td>
+                    <td>$4</td>
+                    <td>$5</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p><b>Special Coffee</b></p>
+            <ul>
+                <li>Single Origin
+                    <ul>
+                        <li>Edfg</li>
+                        <li>sdfg</li>
+                    </ul>
+                </li>
+                <li>Bádf
+                    <ul>
+                        <li>sdfghj</li>
+                        <li>qưertyui</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <p><b>Order Form</b></p>
+        <form action="/action_page.php">
+            <label for="fname">Name:</label><br>
+            <input type="text" id="Nam" name="Binh" value=""><br><br>
+
+            <label for="lname">Email:</label><br>
+            <input type="email" id="lname" name="lname" value=""><br><br>
+
+            <label for="lname">Phone:</label><br>
+            <input type="tel" pattern="[0-9]{10}" id="lname" name="lname" value="123-456"><br><br>
+            
+            <label for="lname">Size:</label><br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="small">Small</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="medium">Medium</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="large">Large</label><br></br>
+          
+            <label for="cars">Coffee Type:</label>
+            <select id="coffee" name="coffee">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            </select><br><br>
+          
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1"><br><br>
+
+            <label for="lname">Email:</label><br>
+            <input type="date" id="lname" name="lname" value=""><br><br>            
+            
+            <input type="submit" value="Order Now">
+          </form> 
+          
+    </div>
+</body>
+</html>
