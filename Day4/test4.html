@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Poppins&display=swap">
+    <style>
+        header{
+            color:chocolate;
+            background-color :rgba(255, 127, 80, 0.705);
+            width: 100%;
+            padding: 30px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        nav{
+            background-color: rgba(199, 77, 77, 0.493);
+            padding: 8px;
+            width: 100%;
+            
+        }
+        nav a{
+            text-decoration: none;
+            color:aliceblue;
+            margin: 5px;
+        }
+        input[type=text], input[type=date], input[type=time], input[type=tel], select{
+            width:99%;
+            padding:6px;
+            margin: 6px
+        }
+        input[type=submit]{
+            background-color:rgb(199, 53, 16);
+            color:aliceblue;
+            padding: 10px
+
+        }
+        iframe{
+            width: 100%;
+            border-color: rgb(247, 18, 18);
+        }
+    </style>
+</head>
+
+<body>
+    <header>Nhà hàng ABC</header>
+    <nav>
+        <a href="trangchu">Trang chủ</a>
+        <a href="gioithieu">Giới thiệu</a>
+        <a href="thucdon">Thực đơn</a>
+        <a href="datban">Đặt bàn </a>
+    </nav>
+    <h2>Giới thiệu</h2>
+    <p> Nhà hàng ABC tự hào mang đến cho quý khách những món ăn ngon, da dạng và chất lượng với không gian âm cũng thân thiện. </p>
+    <h2>Thực đơn</h2>
+            <input type="checkbox" id="Nam" name="Binh" value="">
+            <label for="fname">Món khai vị</label><br>
+            
+            <input type="checkbox" id="lname" name="lname" value="">
+            <label for="lname">Món chính</label><br>
+
+            <input type="checkbox" pattern="[0-9]{10}" id="lname" name="lname" >
+            <label for="lname">Món tráng miệng</label><br>
+    <h2>Đặt bàn</h2>
+    <form action="/action_page.php">
+        <label for="fname">Họ và tên:</label><br>
+        <input type="text" id="Nam" name="Binh" value=""><br><br>
+        
+        <label for="lname">Phone:</label><br>
+        <input type="tel" pattern="[0-9]{10}" id="lname" name="lname" value=""><br><br>
+        
+
+        <label for="quantity">Ngày đặt</label><br>
+        <input type="date" id="quantity" name="quantity"><br><br>
+
+        <label for="lname">Giờ đặt</label><br>
+        <input type="time" id="lname" name="lname" value=""><br><br>            
+        
+        <label for="fname">Ghi chú:</label><br>
+        <input type="text" id="Nam" name="Binh" value=""><br><br>
+
+        <input type="submit" value="Đặt bàn">
+      </form> 
+      <h2>Bản đồ</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6737927325733!2d105.84115611542672!3d21.027663993293558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1:0xe7887f7488c131ed!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBBcHRlY2g!5e0!3m2!1svi!2s!4v1684306187367!5m2!1svi!2s
+      " title="description"></iframe>
+</body>
+</html>
